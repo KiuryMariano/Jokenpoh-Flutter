@@ -20,7 +20,7 @@ class _JogoPageState extends State<JogoPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        automaticallyImplyLeading: false, // Remove o botão de voltar
+        automaticallyImplyLeading: false,
         title: const Text(
           'Pedra, Papel, Tesoura',
           style: TextStyle(color: Colors.white, fontWeight: FontWeight.w900),
@@ -66,11 +66,11 @@ class _JogoPageState extends State<JogoPage> {
               widget.resultado == 'ganhou'
                   ? "assets/images/vitoria.png"
                   : widget.resultado == 'perdeu'
-                  ? "assets/images/derrota.png"
-                  : "assets/images/empate.png",
+                  ? "assets/images/perder.png"
+                  : "assets/images/aperto-de-maos.png",
             ),
           ),
-          const SizedBox(height: 10), // Espaço entre imagem e texto
+          const SizedBox(height: 10),
           Text(
             widget.resultado == 'ganhou'
                 ? 'Você Ganhou!'
@@ -89,7 +89,7 @@ class _JogoPageState extends State<JogoPage> {
               color: Colors.white,
             ),
             label: const Text(
-              "Jogar Novamente",
+              "Jogar Outra Vez",
               style: TextStyle(
                 color: Colors.white,
                 fontWeight: FontWeight.w900,

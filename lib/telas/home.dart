@@ -62,7 +62,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        automaticallyImplyLeading: false, // Remove o botão de voltar
+        automaticallyImplyLeading: false,
         title: const Text(
           'Pedra, Papel, Tesoura',
           style: TextStyle(color: Colors.white, fontWeight: FontWeight.w900),
@@ -82,7 +82,7 @@ class _HomePageState extends State<HomePage> {
               Text(
                 'Vitórias: $_vitorias  |  Derrotas: $_derrotas  |  Empates: $_empates',
                 style: const TextStyle(
-                  fontSize: 16,
+                  fontSize: 17,
                   fontWeight: FontWeight.w900,
                 ),
               ),
